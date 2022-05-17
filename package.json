@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leduchuy-cmd/Natours_web.git"
+  },
+  "author": "HuyLe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leduchuy-cmd/Natours_web/issues"
+  },
+  "homepage": "https://github.com/leduchuy-cmd/Natours_web#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
