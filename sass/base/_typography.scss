@@ -44,6 +44,7 @@ body {
     animation: moveInRight 1s ease-out;
   }
 }
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -63,11 +64,13 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
+
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .paragraph {
   font-size: $default-font-size;
   // nếu như không phải paragraph cuối cùng thì cách xuống 3rem

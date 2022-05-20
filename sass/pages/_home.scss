@@ -20,10 +20,20 @@
   & * {
     transform: skewY(7deg);
   }
+  // kiểu này sẽ thay đổi thuộc tính về nằm thẳng hàng như web default
+  // & > * {
+  //   transform: skewY(7deg);
+  // }
 }
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  // background-color: $color-grey-light-1;
+  position: relative;
 }
