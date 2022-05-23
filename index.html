@@ -16,6 +16,38 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>About Natous</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Your benfits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- HEADER -->
     <header class="header">
       <div class="header__logo-box">
@@ -26,7 +58,9 @@
           <span class="heading-primary--main"> Out doors </span>
           <span class="heading-primary--sub"> is where life happens </span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -136,7 +170,7 @@
     </section>
 
     <!-- SECTION TOURS -->
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Most popular tours</h2>
       </div>
@@ -167,7 +201,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$297</p>
                 </div>
-                <a href="#" class="btn btn--white">Book now!</a>
+                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
             </div>
           </div>
@@ -198,7 +232,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$497</p>
                 </div>
-                <a href="#" class="btn btn--white">Book now!</a>
+                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
             </div>
           </div>
@@ -229,7 +263,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$897</p>
                 </div>
-                <a href="#" class="btn btn--white">Book now!</a>
+                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
             </div>
           </div>
@@ -420,6 +454,38 @@
         </div>
       </div>
     </footer>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="./img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read the terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eaque
+            cum tenetur voluptates tempore obcaecati unde nulla optio quo
+            veritatis corrupti id quis voluptas doloribus doloremque sunt ipsam
+            est culpa, omnis totam iste sapiente. Ratione, laborum.
+            Necessitatibus soluta ab laudantium nobis, omnis illo facere fugiat
+            voluptatibus accusantium similique facilis veniam? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Quis numquam deleniti debitis
+            voluptatibus totam laboriosam corrupti tempore, corporis aliquid
+            eveniet accusamus! Facilis eligendi, quo minus eos totam sint autem.
+            Delectus!
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- <section class="grid-test">
       <div class="row">
