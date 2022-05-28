@@ -17,6 +17,11 @@
     }
   }
 
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
   &__navigation {
     border-top: 1px solid $color-grey-dark;
     display: inline-block;
@@ -34,6 +39,7 @@
 
   &__item {
     display: inline-block;
+
     &:not(:last-child) {
       margin-right: 2rem;
     }
@@ -48,6 +54,7 @@
       display: inline-block;
       background-color: $color-grey-dark-3;
     }
+
     &:hover,
     &:active {
       color: $color-primary;

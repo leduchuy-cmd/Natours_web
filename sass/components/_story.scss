@@ -27,18 +27,23 @@
     height: 15rem;
     float: left;
 
-    // ảnh về hình tròn
-    -webkit-shape-color: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-
     // kéo chữ và ảnh về vị trí ban đầu
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      // ảnh về hình tròn
+      -webkit-shape-color: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(phone) {
-      transform: translateX(-3rem);
+      transform: translateX(-3rem) skewX(0);
     }
   }
 
